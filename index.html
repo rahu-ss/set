@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<style>
+body{
+    background-color: gray;
+}
+.flags{
+    max-width: 400px;
+    margin: auto;
+    margin-top: 15px;
+}   
+.top,.middle,.down{
+height: 65px;
+width: 350px;
+}
+
+.top{
+    background-color: #ff9933;
+}
+.middle{
+    background-color: rgb(133, 127, 127);
+    display: flex;
+    justify-content: center;
+}
+.down{
+    background-color: green;
+}
+.wheel{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    outline: 1px solid rgb(19, 19, 21);
+    position: relative;
+}
+.line{
+   position: absolute;
+   height: 100%;
+   width: 1px;
+   background-color: darkblue;
+   left: 50%;
+  
+}
+.line:nth-child(1)
+{
+    transform: rotate(15deg);
+   
+}
+.line:nth-child(2)
+{
+    transform: rotate(30deg);
+}
+.line:nth-child(3)
+{
+    transform: rotate(45deg);
+}
+.line:nth-child(4) 
+{
+    transform: rotate(60deg);
+}
+.line:nth-child(5) 
+{
+    transform: rotate(75deg);
+}
+.line:nth-child(6) 
+{
+    transform: rotate(90deg);
+}
+.line:nth-child(7) 
+{
+    transform: rotate(105deg);
+}
+.line:nth-child(8) 
+{
+    transform: rotate(120deg);
+}
+.line:nth-child(9) 
+{
+    transform: rotate(135deg);
+}
+.line:nth-child(10) 
+{
+    transform: rotate(150deg);
+}
+.line:nth-child(11) 
+{
+    transform: rotate(165deg);
+}
+.line:nth-child(12) 
+{
+    transform: rotate(180deg);
+}
+#element{
+    color: blueviolet;
+    font-size: 2rem;
+}
+.purple {
+    color: purple;
+}
+.home{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+</style>
+</head>
+<body>
+<div class="flags">
+<div class="top"></div>
+<div class="middle">
+<div class="wheel">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+</div>
+</div>
+<div class="down"></div>
+</div>
+<section class="home">
+    Hi,My Name is <span class="purple">Imran Aly</span>
+    <div>and i am Proud To Be</div>
+    <span id="element"></span>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['An Indian Muslim ','and a villager','a Student of sviet'],
+      typeSpeed: 50,
+      loop: true,
+    });
+  </script>
+
+</body>
+</html>
+
+</body>
+</html>
